@@ -14,6 +14,7 @@ import { Link } from "react-router-dom";
             return;
         }
         this.props.addContactHandler(this.state);
+        alert("Contact added : " + this.state.name);
         this.setState({name: "",email:""});
         console.log(this.state);
     };
