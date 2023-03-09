@@ -1,5 +1,5 @@
 import React , { Component} from 'react'
-
+import { Link } from "react-router-dom";
 
  class AddContact extends Component {
     state ={
@@ -21,6 +21,7 @@ import React , { Component} from 'react'
 render(){
 
 return(
+    <>
     <div className="ui main"><br></br><br></br>
         <h2>AddContact</h2>
         <form className="ui form " onSubmit ={this.add}>
@@ -40,6 +41,10 @@ return(
         </form>
        
     </div>
+    <Link to="/">
+          <button className="ui button blue centert">Home</button>
+    </Link>
+</>
 );
 
 }
