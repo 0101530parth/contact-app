@@ -20,11 +20,12 @@ const ContactList = (props)=> {
     } )
     return <div className="ui celled list ">
         
-    
+    <div style={{ display: "flex", justifyContent: "space-between" }}>
         <h3> Contact List  </h3>
      <Link to ="/add"> 
 <button className="ui button blue centert">Add Contact</button>
 </Link>
+</div>
 
         {renderContactList}
 
