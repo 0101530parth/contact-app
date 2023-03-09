@@ -21,11 +21,11 @@ const ContactList = (props)=> {
     return <div className="ui celled list ">
         
     
-        <h3> Contact List 
+        <h3> Contact List  </h3>
      <Link to ="/add"> 
 <button className="ui button blue centert">Add Contact</button>
 </Link>
- </h3>
+
         {renderContactList}
 
     </div>;
