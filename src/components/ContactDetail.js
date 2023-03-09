@@ -5,7 +5,7 @@ import {useLocation} from 'react-router-dom';
 const ContactDetail= () => {
     const location = useLocation();
     const {state} = location;
-    const { name, email } = state.contact ;
+    const { name, email,mob_no } = state.contact ;
 return(
    <div className ="main">
     <center><h2>Contact detail</h2></center>
@@ -16,6 +16,7 @@ return(
         <div className ="content">
             <div className ="header">{name}</div>
             <div className="description">{email}</div>
+            <div className ="number">{mob_no}</div>
         </div>
     </div>
     <div className="center-div">

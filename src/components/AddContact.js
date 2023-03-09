@@ -5,17 +5,18 @@ import { Link } from "react-router-dom";
     state ={
         name:"",
         email:"",
+        mob_no:"",
     };
 
     add = (e) => {
         e.preventDefault();
-        if(this.state.name === "" && this.state.email ===""){
+        if(this.state.name === "" && this.state.email ==="" && this.state.mob_no===""){
             alert("All the fields are mandatory!");
             return;
         }
         this.props.addContactHandler(this.state);
         alert("Contact added : " + this.state.name);
-        this.setState({name: "",email:""});
+        this.setState({name: "",email:"",mob_no:""});
         console.log(this.state);
     };
 
@@ -38,6 +39,12 @@ return(
             value ={this.state.email}
             onChange={(e) =>this.setState({email: e.target.value})}/>
         </div>
+        <div className="field">
+            <label>Mob_no</label>
+            <input type="number" name="mob_no" placeholder="Mob No"
+            value ={this.state.mob_no}
+            onChange={(e)=>this.setState({mob_no: e.target.value})}/>
+        </div><br></br>
         <button className="ui button blue">Add</button>
         </form>
        

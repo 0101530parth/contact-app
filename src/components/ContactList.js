@@ -23,7 +23,7 @@ const ContactList = (props)=> {
     <div style={{ display: "flex", justifyContent: "space-between" }}>
         <h3> Contact List  </h3>
      <Link to ="/add"> 
-<button className="ui button blue centert">Add Contact</button>
+<button className="ui button blue center">Add Contact</button>
 </Link>
 </div>
 
