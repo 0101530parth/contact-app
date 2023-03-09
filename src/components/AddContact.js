@@ -42,7 +42,7 @@ return(
        
     </div>
     <Link to="/">
-          <button className="ui button blue centert">Home</button>
+          <button className="ui button blue centert" style={{marginTop:"10px"}}>Home</button>
     </Link>
 </>
 );
